@@ -58,7 +58,6 @@ exports.deleteTask = (req, res) => {
   console.log('delete request');
   Task.findByIdAndRemove(req.params.id)
     .then((deletedTask) => {
-    //   console.log('Task deleted successfully',deletedTask);
       return res.status(200).json(deletedTask);
     })
     .catch((err) => {
