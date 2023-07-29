@@ -10,7 +10,7 @@ require('dotenv').config(); // Load environment variables from .env file
 
 const app = express();
 
-// Middleware
+//Middleware
 app.use(bodyParser.json());
 app.use(cors());
 
